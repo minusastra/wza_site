@@ -14,21 +14,25 @@
   <script src="js/scroll-animations.js" defer></script>
 </head>
 <body>
+  <!-- Persistent Slogan Bar -->
+  <div class="slogan-bar" id="sloganBar">
+    <div class="slogan-container">
+      <p class="slogan">PAMOJA, TUNACHEZA</p>
+      <p class="translation">Together We Play</p>
+    </div>
+  </div>
+
   <!-- Hero Section -->
   <section class="hero" id="home">
     <div class="hero-content">
       <h1>WECHEZA</h1>
-      <div class="slogan-container">
-        <p class="slogan">PAMOJA, TUNACHEZA</p>
-        <p class="translation">Together We Play</p>
-      </div>
-      <p class="tagline">Building communities, one fan at a time</p>
+      <p class="tagline">Building women's sports communities, one fan at a time</p>
       <a href="#get-involved" class="btn">Join the Movement</a>
     </div>
   </section>
 
   <!-- Mission & Vision -->
-  <section id="mission" class="section">
+  <section id="mission" class="section section-alt">
     <div class="container">
       <h2>Our Purpose</h2>
       <div class="mission-container">
@@ -45,17 +49,18 @@
   </section>
 
   <!-- About Us Section -->
-  <section id="about-us" class="section dark-section">
+  <section id="about-us" class="section">
     <div class="container">
       <h2>Our Approach</h2>
       <div class="articles-grid">
+        <!-- CONTENT UPDATE: Feature cards can be updated here -->
         <article class="feature-card">
           <div class="card-icon">
             <i class="fas fa-users"></i>
           </div>
           <h3>Increasing Fan Engagement</h3>
           <p>We create digital and physical spaces where fans can authentically connect with women athletes through exclusive content, events, and community platforms.</p>
-          <a href="#" class="text-link">Read more →</a>
+          <a href="#" class="text-link">Read more <span class="arrow">→</span></a>
         </article>
         <article class="feature-card">
           <div class="card-icon">
@@ -63,7 +68,7 @@
           </div>
           <h3>Monetizing Personal Brands</h3>
           <p>Our athlete partnership program helps women build sustainable income streams through sponsorships, merchandise, and digital content monetization.</p>
-          <a href="#" class="text-link">Read more →</a>
+          <a href="#" class="text-link">Read more <span class="arrow">→</span></a>
         </article>
         <article class="feature-card">
           <div class="card-icon">
@@ -71,81 +76,94 @@
           </div>
           <h3>Building Communities</h3>
           <p>From grassroots tournaments to professional leagues, we're creating ecosystems where women athletes can thrive both on and off the field.</p>
-          <a href="#" class="text-link">Read more →</a>
+          <a href="#" class="text-link">Read more <span class="arrow">→</span></a>
         </article>
       </div>
     </div>
   </section>
 
   <!-- Impact Statistics -->
-  <section id="impact" class="section">
+  <section id="impact" class="section section-accent">
     <div class="container">
       <h2>Our Impact</h2>
       <p class="section-description">Through our initiatives, we're creating meaningful change for women athletes across East Africa.</p>
       
+      <!-- CONTENT UPDATE: Stats can be updated by changing the data-count attribute and descriptions -->
       <div class="stats-container">
         <div class="stat-card">
-          <div class="stat-number">214+</div>
+          <div class="stat-number" data-count="214">214</div>
           <div class="stat-icon"><i class="fas fa-female"></i></div>
           <div class="stat-label">Girls Supported</div>
           <p class="stat-description">Young athletes provided with equipment, training, and mentorship</p>
         </div>
         <div class="stat-card">
-          <div class="stat-number">3</div>
+          <div class="stat-number" data-count="3">3</div>
           <div class="stat-icon"><i class="fas fa-trophy"></i></div>
           <div class="stat-label">Tournaments Organized</div>
           <p class="stat-description">Creating competitive opportunities for women's teams</p>
         </div>
         <div class="stat-card">
-          <div class="stat-number">18</div>
+          <div class="stat-number" data-count="1">1</div>
           <div class="stat-icon"><i class="fas fa-tshirt"></i></div>
-          <div class="stat-label">Athletes Equipped</div>
-          <p class="stat-description">Kayole Starlets players provided with sports bras and equipment</p>
+          <div class="stat-label">Partnered Clubs</div>
+          <p class="stat-description">Kayole Starlets</p>
         </div>
         <div class="stat-card">
-          <div class="stat-number">5</div>
+          <div class="stat-number" data-count="5">5</div>
           <div class="stat-icon"><i class="fas fa-handshake"></i></div>
-          <div class="stat-label">Partnerships Formed</div>
+          <div class="stat-label">Collaboration Formed</div>
           <p class="stat-description">Collaborations with organizations supporting women in sports</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Impact Timeline -->
-  <section id="journey" class="section">
+  <!-- Impact Journey - New Design -->
+  <section id="journey" class="section section-alt">
     <div class="container">
       <h2>Our Journey</h2>
-      <div class="timeline">
-        <div class="timeline-item">
-          <div class="timeline-date">Oct 2024</div>
-          <div class="timeline-content">
+      <!-- CONTENT UPDATE: Journey cards can be updated here -->
+      <div class="journey-container">
+        <div class="journey-card">
+          <div class="journey-card-header">
+            <div class="journey-date">October 2024</div>
+            <div class="journey-badge">Recent</div>
+          </div>
+          <div class="journey-content">
             <h3>Her Game Too Partnership</h3>
             <p>Launched our first major collaboration bringing resources to Nairobi's emerging women footballers through equipment donations and mentorship programs.</p>
-            <div class="timeline-stats">
+            <div class="journey-stats">
               <span>200 kits donated</span>
               <span>150 athletes reached</span>
               <span>5 coaching clinics</span>
             </div>
           </div>
         </div>
-        <div class="timeline-item">
-          <div class="timeline-date">Dec 2024</div>
-          <div class="timeline-content">
+        
+        <div class="journey-card">
+          <div class="journey-card-header">
+            <div class="journey-date">December 2024</div>
+            <div class="journey-badge">Tournament</div>
+          </div>
+          <div class="journey-content">
             <h3>Marjolene Nekesa Tournament</h3>
             <p>Annual grassroots competition in Eldoret featuring 16 teams with parallel workshops on sports leadership and health education.</p>
-            <div class="timeline-stats">
+            <div class="journey-stats">
               <span>800+ spectators</span>
               <span>3 media outlets</span>
             </div>
           </div>
         </div>
-        <div class="timeline-item">
-          <div class="timeline-date">Feb 2025</div>
-          <div class="timeline-content">
+        
+        <div class="journey-card">
+          <div class="journey-card-header">
+            <div class="journey-date">February 2025</div>
+            <div class="journey-badge">Training</div>
+          </div>
+          <div class="journey-content">
             <h3>Esse Akida Development Camp</h3>
             <p>Intensive skills camp for young athletes focusing on technical development and mental resilience training.</p>
-            <div class="timeline-stats">
+            <div class="journey-stats">
               <span>120 participants</span>
               <span>Age 12-18</span>
             </div>
@@ -161,6 +179,7 @@
       <h2>What They Say</h2>
       <p class="section-description">Hear from the athletes, coaches, and partners who have experienced the impact of our work.</p>
       
+      <!-- CONTENT UPDATE: Testimonial cards can be updated here -->
       <div class="testimonials-container">
         <div class="testimonial-card">
           <div class="testimonial-quote">
@@ -169,6 +188,7 @@
             <i class="fas fa-quote-right"></i>
           </div>
           <div class="testimonial-author">
+            <!-- IMAGE UPDATE: Replace with actual testimonial image -->
             <img src="/placeholder.svg?height=80&width=80" alt="Coach Sarah" class="testimonial-image">
             <div class="testimonial-info">
               <h4>Sarah Mwangi</h4>
@@ -184,6 +204,7 @@
             <i class="fas fa-quote-right"></i>
           </div>
           <div class="testimonial-author">
+            <!-- IMAGE UPDATE: Replace with actual testimonial image -->
             <img src="/placeholder.svg?height=80&width=80" alt="Faith Atieno" class="testimonial-image">
             <div class="testimonial-info">
               <h4>Faith Atieno</h4>
@@ -199,6 +220,7 @@
             <i class="fas fa-quote-right"></i>
           </div>
           <div class="testimonial-author">
+            <!-- IMAGE UPDATE: Replace with actual testimonial image -->
             <img src="/placeholder.svg?height=80&width=80" alt="James Odhiambo" class="testimonial-image">
             <div class="testimonial-info">
               <h4>James Odhiambo</h4>
@@ -211,14 +233,16 @@
   </section>
 
   <!-- Partners Section -->
-  <section id="partners" class="section dark-section">
+  <section id="partners" class="section section-accent">
     <div class="container">
       <h2>Our Partners</h2>
       <p class="section-description">We collaborate with organizations that share our vision for women's sports in East Africa.</p>
       
+      <!-- CONTENT UPDATE: Partner logos can be updated here -->
       <div class="partners-carousel-container">
         <div class="partners-carousel">
           <div class="partner-logo">
+            <!-- IMAGE UPDATE: Replace with actual partner logo -->
             <img src="/placeholder.svg?height=80&width=160" alt="Partner 1">
           </div>
           <div class="partner-logo">
@@ -248,70 +272,78 @@
   </section>
 
   <!-- News/Blog Section -->
-  <section id="news" class="section">
+  <section id="news" class="section section-alt">
     <div class="container">
       <h2>Latest News</h2>
       <p class="section-description">Stay updated with our recent activities and upcoming events.</p>
       
+      <!-- CONTENT UPDATE: News cards can be updated here -->
       <div class="news-grid">
+        <!-- First news article -->
         <article class="news-card">
           <div class="news-image">
-            <img src="/placeholder.svg?height=200&width=350" alt="News 1">
+            <!-- IMAGE UPDATE: Replace with actual news image -->
+            <img src="/placeholder.svg?height=200&width=350" alt="Wecheza Partners with Grassroot Tournaments">
+            <div class="news-date">
+              <span class="day">24</span>
+              <span class="month">Jan</span>
+            </div>
+          </div>
+          <div class="news-content">
+            <h3>Wecheza Partners with Two Grassroot Tournaments</h3>
+            <p>Empowerment group Wecheza partners with two grassroot tournaments to build women's football in Kenya.</p>
+            <a href="https://www.capitalfm.co.ke/sports/2025/01/24/empowerment-group-wecheza-partners-two-grassroot-tourneys-to-build-womens-football/" target="_blank" class="text-link">Read more <span class="arrow">→</span></a>
+          </div>
+        </article>
+        
+        <!-- Second news article -->
+        <article class="news-card">
+          <div class="news-image">
+            <!-- IMAGE UPDATE: Replace with actual news image -->
+            <img src="/placeholder.svg?height=200&width=350" alt="Her Game Too Partners with First African Club">
             <div class="news-date">
               <span class="day">15</span>
-              <span class="month">Mar</span>
+              <span class="month">Dec</span>
             </div>
           </div>
           <div class="news-content">
-            <h3>Wecheza Launches New Mentorship Program</h3>
-            <p>Our latest initiative pairs professional athletes with young girls from underserved communities.</p>
-            <a href="#" class="text-link">Read more →</a>
+            <h3>Her Game Too Partners with First African Club</h3>
+            <p>Her Game Too announces groundbreaking partnership with its first African club through Wecheza initiative.</p>
+            <a href="https://www.hergametoo.co.uk/post/her-game-too-partners-with-first-african-club" target="_blank" class="text-link">Read more <span class="arrow">→</span></a>
           </div>
         </article>
         
+        <!-- Third news article -->
         <article class="news-card">
           <div class="news-image">
-            <img src="/placeholder.svg?height=200&width=350" alt="News 2">
-            <div class="news-date">
-              <span class="day">28</span>
-              <span class="month">Feb</span>
-            </div>
-          </div>
-          <div class="news-content">
-            <h3>Upcoming Tournament: East Africa Cup</h3>
-            <p>Mark your calendars for the biggest women's football event in the region this April.</p>
-            <a href="#" class="text-link">Read more →</a>
-          </div>
-        </article>
-        
-        <article class="news-card">
-          <div class="news-image">
-            <img src="/placeholder.svg?height=200&width=350" alt="News 3">
+            <!-- IMAGE UPDATE: Replace with actual news image -->
+            <img src="/placeholder.svg?height=200&width=350" alt="New Kenya Ambassador Joins Her Game Too">
             <div class="news-date">
               <span class="day">10</span>
-              <span class="month">Feb</span>
+              <span class="month">Nov</span>
             </div>
           </div>
           <div class="news-content">
-            <h3>Wecheza Partners with Local Businesses</h3>
-            <p>New sponsorship opportunities are creating sustainable support for women athletes.</p>
-            <a href="#" class="text-link">Read more →</a>
+            <h3>New Kenya Ambassador Joins Her Game Too</h3>
+            <p>Creator of Wecheza, a platform dedicated to women's sports in Africa, joins Her Game Too as Kenya Ambassador.</p>
+            <a href="https://www.hergametoo.co.uk/post/new-kenya-ambassador-and-content-creator-joins-her-game-too" target="_blank" class="text-link">Read more <span class="arrow">→</span></a>
           </div>
         </article>
       </div>
       
       <div class="text-center">
-        <a href="#" class="btn">View All News</a>
+        <button id="viewAllNewsBtn" class="btn">View All News</button>
       </div>
     </div>
   </section>
 
   <!-- FAQ Section -->
-  <section id="faq" class="section dark-section">
+  <section id="faq" class="section">
     <div class="container">
       <h2>Frequently Asked Questions</h2>
       <p class="section-description">Find answers to common questions about our work and how you can get involved.</p>
       
+      <!-- CONTENT UPDATE: FAQ items can be updated here -->
       <div class="faq-container">
         <div class="faq-item">
           <div class="faq-question">
@@ -319,7 +351,7 @@
             <span class="faq-toggle"><i class="fas fa-plus"></i></span>
           </div>
           <div class="faq-answer">
-            <p>There are many ways to support our work! You can volunteer at our events, become a sponsor, donate equipment or funds, or simply attend our tournaments and spread the word about women's sports in East Africa.</p>
+            <p>There are many ways to support our work! You can volunteer at our events, become a sponsor, donate equipment or funds, or simply attend our tournaments and spread the word about women's sports in East Africa. We also welcome partnerships with organizations that share our vision for empowering women through sports.</p>
           </div>
         </div>
         
@@ -329,7 +361,7 @@
             <span class="faq-toggle"><i class="fas fa-plus"></i></span>
           </div>
           <div class="faq-answer">
-            <p>We work with both individual athletes and teams. Our mentorship programs focus on individual development, while our equipment donations and tournament organization benefit entire teams and clubs.</p>
+            <p>We work with both individual athletes and teams. Our mentorship programs focus on individual development, while our equipment donations and tournament organization benefit entire teams and clubs. We believe in supporting the ecosystem at all levels to create sustainable change in women's sports.</p>
           </div>
         </div>
         
@@ -339,7 +371,7 @@
             <span class="faq-toggle"><i class="fas fa-plus"></i></span>
           </div>
           <div class="faq-answer">
-            <p>We're always looking for new partnerships! Please contact us through our form below or email us directly at info@wecheza.com to discuss potential collaboration opportunities.</p>
+            <p>We're always looking for new partnerships! Please contact us through our form below or email us directly at info@wecheza.com to discuss potential collaboration opportunities. We partner with businesses, NGOs, sports federations, and community organizations that share our commitment to advancing women's sports in East Africa.</p>
           </div>
         </div>
         
@@ -349,7 +381,7 @@
             <span class="faq-toggle"><i class="fas fa-plus"></i></span>
           </div>
           <div class="faq-answer">
-            <p>We currently operate in Kenya, with a focus on Nairobi and Eldoret. We have plans to expand to Uganda and Tanzania in the coming year as our network and resources grow.</p>
+            <p>We currently operate in Kenya, with a focus on Nairobi and Eldoret. We have plans to expand to Uganda and Tanzania in the coming year as our network and resources grow. Our goal is to create a pan-African network of women's sports communities over the next five years.</p>
           </div>
         </div>
         
@@ -359,7 +391,7 @@
             <span class="faq-toggle"><i class="fas fa-plus"></i></span>
           </div>
           <div class="faq-answer">
-            <p>The best way to stay informed is to subscribe to our newsletter below, follow us on social media, or check our website regularly for announcements about upcoming tournaments and initiatives.</p>
+            <p>The best way to stay informed is to subscribe to our newsletter below, follow us on social media, or check our website regularly for announcements about upcoming tournaments and initiatives. We also send SMS updates for local events to our community members.</p>
           </div>
         </div>
       </div>
@@ -367,23 +399,27 @@
   </section>
 
   <!-- Meet The Team -->
-  <section id="team" class="section">
+  <section id="team" class="section section-accent">
     <div class="container">
       <h2>Meet The Team</h2>
+      <!-- CONTENT UPDATE: Team members can be updated here -->
       <div class="team-grid">
         <div class="team-member">
+          <!-- IMAGE UPDATE: Replace with actual team member image -->
           <img src="images/gloria.jpg" alt="Gloria Mariwa" class="team-headshot">
           <h3>Gloria Mariwa</h3>
           <p class="role">Founder & Partnerships</p>
           <p class="bio">Former national team player turned sports entrepreneur with a passion for creating opportunities for women in sports.</p>
         </div>
         <div class="team-member">
+          <!-- IMAGE UPDATE: Replace with actual team member image -->
           <img src="images/faith.jpg" alt="Faith Moraa" class="team-headshot">
           <h3>Faith Moraa</h3>
           <p class="role">Athlete Relations</p>
           <p class="bio">Connects athletes with brand opportunities and career development programs across East Africa.</p>
         </div>
         <div class="team-member">
+          <!-- IMAGE UPDATE: Replace with actual team member image -->
           <img src="images/eric.jpg" alt="Eric Jackson" class="team-headshot">
           <h3>Eric Jackson</h3>
           <p class="role">Business Operations</p>
@@ -397,7 +433,7 @@
   </section>
 
   <!-- Subscribe Section -->
-  <section id="subscribe" class="section dark-section">
+  <section id="subscribe" class="section">
     <div class="container">
       <div class="subscribe-container">
         <div class="subscribe-content">
@@ -416,7 +452,7 @@
   </section>
 
   <!-- Get Involved Section -->
-  <section id="get-involved" class="section">
+  <section id="get-involved" class="section section-alt">
     <div class="container">
       <h2>Be Part of the Change</h2>
       <p class="section-description">Whether you're an athlete, sponsor, volunteer, or fan, there's a place for you in our community. We offer multiple pathways to get involved and make an impact.</p>
@@ -427,10 +463,11 @@
   </section>
 
   <!-- Contact Form -->
-  <section id="contact" class="section dark-section">
+  <section id="contact" class="section section-accent">
     <div class="container">
       <h2>Get In Touch</h2>
       <div class="contact-container">
+        <!-- CONTENT UPDATE: Form action can be updated here -->
         <form class="contact-form" id="contactForm" action="https://formspree.io/f/your-form-id" method="POST">
           <div class="form-group">
             <label for="name">Full Name</label>
@@ -450,6 +487,7 @@
           <div id="formStatus" class="form-status"></div>
         </form>
       </div>
+      <!-- CONTENT UPDATE: Contact information can be updated here -->
       <div class="contact-info-container">
         <div class="info-item">
           <i class="fas fa-envelope"></i>
@@ -468,9 +506,10 @@
   </section>
 
   <!-- Social Media -->
-  <section class="section">
+  <section class="section social-section">
     <div class="container">
       <h2>Follow Our Journey</h2>
+      <!-- CONTENT UPDATE: Social media links can be updated here -->
       <div class="social-links">
         <a href="https://instagram.com/wecheza" target="_blank" class="social-icon" aria-label="Instagram">
           <i class="fab fa-instagram"></i>
@@ -492,12 +531,7 @@
   <div class="navbar-container">
     <div class="navbar" id="myNavbar">
       <a href="#home" class="active">Home</a>
-      <a href="#mission">Mission</a>
-      <a href="#about-us">Approach</a>
       <a href="#impact">Impact</a>
-      <a href="#journey">Journey</a>
-      <a href="#testimonials">Testimonials</a>
-      <a href="#partners">Partners</a>
       <a href="#news">News</a>
       <a href="#team">Team</a>
       <a href="#contact">Contact</a>
