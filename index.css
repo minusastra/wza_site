@@ -194,6 +194,7 @@
   .section {
     padding: var(--section-padding);
     position: relative;
+    z-index: 1;
   }
   
   .dark-section {
@@ -794,14 +795,14 @@
     );
     top: 0;
     bottom: 0;
-    left: 120px;
+    left: 50px;
     margin-left: -2px;
     border-radius: 2px;
     z-index: 1;
   }
   
   .timeline-item {
-    padding: 1.5rem 0 1.5rem 8rem;
+    padding: 1.5rem 0 1.5rem 6rem;
     position: relative;
     margin-bottom: 3rem;
     opacity: 1;
@@ -812,7 +813,7 @@
   .timeline-date {
     position: absolute;
     left: 0;
-    width: 100px;
+    width: 80px;
     text-align: right;
     padding-right: 1.5rem;
     color: var(--timeline-accent);
@@ -831,6 +832,7 @@
     transition: all 0.3s ease;
     position: relative;
     overflow: hidden;
+    border-left: 4px solid var(--accent-red);
   }
   
   .timeline-content::before {
@@ -854,26 +856,9 @@
     opacity: 1;
   }
   
-  .timeline-icon {
-    position: absolute;
-    top: -15px;
-    right: 20px;
-    width: 50px;
-    height: 50px;
-    background: var(--accent-red);
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: var(--text-light);
-    font-size: 1.5rem;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
-    transition: all 0.3s ease;
-    z-index: 2;
-  }
-  
-  .timeline-content:hover .timeline-icon {
-    transform: scale(1.1) rotate(10deg);
+  .timeline-content h3 {
+    margin-top: 0;
+    color: var(--accent-red);
   }
   
   .timeline-stats {
@@ -917,12 +902,12 @@
   .timeline-item::after {
     content: "";
     position: absolute;
-    width: 24px;
-    height: 24px;
+    width: 20px;
+    height: 20px;
     background: var(--bg-dark);
     border: 4px solid var(--timeline-accent);
     border-radius: 50%;
-    left: 110px;
+    left: 40px;
     top: 2rem;
     z-index: 2;
     transition: all 0.3s ease;
@@ -1339,4 +1324,93 @@
     .faq-question h3 {
       font-size: 1rem;
     }
+  }
+  
+  /* FAQ Section */
+  .faq-container {
+    max-width: 800px;
+    margin: 3rem auto;
+  }
+  
+  .faq-item {
+    margin-bottom: 1rem;
+    border-radius: 8px;
+    overflow: hidden;
+    background: var(--interactive-grey);
+  }
+  
+  .faq-question {
+    padding: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .faq-question:hover {
+    background: rgba(255, 66, 66, 0.1);
+  }
+  
+  .faq-question h3 {
+    margin: 0;
+    font-size: 1.2rem;
+  }
+  
+  .faq-toggle {
+    font-size: 1.2rem;
+    transition: all 0.3s ease;
+  }
+  
+  .faq-item.active .faq-toggle i {
+    transform: rotate(45deg);
+  }
+  
+  .faq-answer {
+    padding: 0 1.5rem;
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+    opacity: 0;
+  }
+  
+  .faq-item.active .faq-answer {
+    padding: 0 1.5rem 1.5rem;
+    max-height: 500px;
+    opacity: 1;
+  }
+  
+  /* Section backgrounds with blur effect */
+  .section {
+    position: relative;
+    z-index: 1;
+  }
+  
+  .section.with-bg-image::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    filter: blur(8px) brightness(0.3);
+    z-index: -1;
+  }
+  
+  .section.with-bg-image.mission-bg::before {
+    background-image: url("/placeholder.svg?height=800&width=1200");
+  }
+  
+  .section.with-bg-image.journey-bg::before {
+    background-image: url("/placeholder.svg?height=800&width=1200");
+  }
+  
+  .section.with-bg-image.team-bg::before {
+    background-image: url("/placeholder.svg?height=800&width=1200");
+  }
+  
+  .section.with-bg-image.contact-bg::before {
+    background-image: url("/placeholder.svg?height=800&width=1200");
   }
