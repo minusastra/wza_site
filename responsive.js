@@ -248,6 +248,8 @@ function setupGoogleSheetsIntegration() {
       const question = item.querySelector(".faq-question")
   
       question.addEventListener("click", () => {
+        const isActive = item.classList.contains("active")
+  
         // Close all other items
         faqItems.forEach((otherItem) => {
           if (otherItem !== item && otherItem.classList.contains("active")) {
@@ -256,7 +258,11 @@ function setupGoogleSheetsIntegration() {
         })
   
         // Toggle current item
-        item.classList.toggle("active")
+        if (isActive) {
+          item.classList.remove("active")
+        } else {
+          item.classList.add("active")
+        }
       })
     })
   
@@ -339,6 +345,7 @@ function setupGoogleSheetsIntegration() {
     })
   })
   
+
   document.addEventListener("DOMContentLoaded", () => {
     // Mobile menu toggle
     const navbar = document.getElementById("myNavbar")
